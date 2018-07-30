@@ -6,7 +6,7 @@
 //  Copyright © 2018 Seth Danner. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class Planet {
     
@@ -14,11 +14,13 @@ class Planet {
     var diameter: Int
     var dayLength: Double
     var distanceFromSun: Double
+    var imageName: String
     
     init(name: String, diameter: Int, dayLength: Double, distanceFromSun: Double) {
         self.name = name
         self.diameter = diameter
         self.dayLength = dayLength
         self.distanceFromSun = distanceFromSun
+        self.imageName = name.lowercased()
     }
 }
